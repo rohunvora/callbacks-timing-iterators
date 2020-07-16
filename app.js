@@ -90,3 +90,24 @@ function superPower2() {
 }
 
 console.log(superHero(superPower1, superPower2));
+
+function blastOff() {
+  let num = 0;
+
+  for (let i =10; i >= num; i--) {
+    console.log(i);
+  }
+  console.log('BLASTOFF!!!!');
+}
+
+setTimeout(blastOff, 3000);
+
+// make a function that prints your name
+// setTimeout and pass in function and a time
+
+function printName() {
+  let name = 'Rohun';
+  console.log(name)
+}
+
+setTimeout(printName, 5000);

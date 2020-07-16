@@ -64,3 +64,29 @@ function subtractNumbers(num1, num2) {
 }
 
 console.log(calculator(5,77, addNumbers, subtractNumbers));
+
+
+// make a superHero function
+
+// take in two callbacks
+
+// return a string in each callback describing the superpower
+
+
+function superHero(superPowerOne, superPowerTwo) {
+  let allSuperPowers = superPowerOne() + ' and ' + superPowerTwo();
+  return allSuperPowers;
+}
+
+function superPower1() {
+  let result = 'flying';
+
+  return result;
+}
+
+function superPower2() {
+  let result = "super strength";
+  return result;
+}
+
+console.log(superHero(superPower1, superPower2));

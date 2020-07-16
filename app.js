@@ -111,3 +111,31 @@ function printName() {
 }
 
 setTimeout(printName, 5000);
+
+const collectables = ['Bomag', 'CMI Corp', 'Wirtgen', 'Catepillar']
+
+collectables.forEach(function(element){
+  if (element.length > 6) {
+    console.log(element);
+  }
+});
+
+//map
+
+const someNumbers = [23, 65, 347, 34];
+
+const addFive = someNumbers.map(function(element){
+  return element + 5
+});
+
+console.log(addFive);
+
+// filter
+
+const filteredNumbers = someNumbers.filter(function(element){
+  if (element > 50) {
+    return element;
+  }
+});
+
+console.log(filteredNumbers)
